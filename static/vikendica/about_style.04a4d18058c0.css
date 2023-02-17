@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Sans, sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: url("media/background2.f325bd307a69.jpg");
+    /* background-color: #161922; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.about .content img {
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+    border-radius: 20px;
+    animation: transitionIn 0.75s;
+}
+
+.text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    animation: transitionIn 0.75s;
+}
+
+.content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h1 {
+    color: white;
+    font-size: 85px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.text h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+span {
+    color: #009688;
+}
+
+.badge {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border: 2px solid #009688;
+    border-spacing: 4px;
+    padding: 7px;
+}
+
+.text p {
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+button {
+    background-color: #009688;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 17px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background: transparent;
+    border: 2px solid #009688;
+    color: #009688;
+    cursor: pointer;
+    transition: .4s;
+}
+
+@media (max-width: 1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+
+    .about .content img {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .about .content img {
+        margin-bottom: 35px;
+    }
+
+    .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .badge {
+        display: flex;
+        margin-right: 50px;
+        align-items: center;
+        
+    }
+}

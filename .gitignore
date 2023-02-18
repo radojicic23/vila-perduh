@@ -1,2 +1,5 @@
+website/.env
+website/__pycache__
+vikendica/__pycache__
 db.sqlite3
 poetry.lock
